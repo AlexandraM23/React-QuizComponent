@@ -11,7 +11,7 @@ class Quiz extends Component {
     }
   }
   render () {
-    let question = quizData.quiz_questions[this.state.quiz_position].instruction_text
+    let question = quizData.quiz_questions[0].instruction_text
     return (
       <div>
         <div className='QuizQuestion'>{question}</div>
