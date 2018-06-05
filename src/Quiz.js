@@ -6,12 +6,12 @@ class Quiz extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      quiz_position: 1,
-      array: quizData.quiz_questions
+      quiz_position: 1
+      // array: quizData.quiz_questions
     }
   }
   render () {
-    let question = this.state.array[this.state.quiz_position].instruction_text
+    let question = quizData.quiz_questions[this.state.quiz_position].instruction_text
     return (
       <div>
         <div className='QuizQuestion'>{question}</div>
